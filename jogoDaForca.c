@@ -64,7 +64,7 @@ int ganhou() {
     return 1;
 }
 
-void abertura() {  // sintaxe de uma função em C;
+void abertura() {
     printf("/***********************/\n");
     printf("   Jogo da Forca\n");
     printf("/***********************/\n");
@@ -75,7 +75,7 @@ void chuta() {
     char chute;
         
     printf("Informe uma letra: ");
-    scanf(" %c", &chute);  // colocamos um espaço antes da variável, pois o scanf, ao ler um caractere único, considera um enter como caractere, uma vez que o mesmo fica de buffer(armazenado temporariamente). Ele se perde quando digitamos uma letra e um enter, que entende como dois valores, e não um.
+    scanf(" %c", &chute);  // colocamos um espaço antes da variável, pois o scanf, ao ler um caractere único, considera um enter como CARACTERE, uma vez que o mesmo fica de buffer(armazenado temporariamente). Ele se perde quando digitamos uma letra e um enter, que entende como dois valores, e não um.
 
     if (letraExiste(chute)) {
         printf("Acertou! A palavra tem a letra %c\n\n", chute);
@@ -114,7 +114,7 @@ void desenhaForca(){
                 (erros >= 2 ? '|' : ' '),
                 (erros >= 3 ? '/' : ' '));
     printf(" |       %c     \n", (erros >= 2 ? '|' : ' '));
-    printf(" |      %c %c    \n", (erros >= 4 ? '/' : ' '),
+    printf(" |      %c %c   \n", (erros >= 4 ? '/' : ' '),
                 (erros >= 4 ? '\\' : ' '));
     printf(" |              \n");
     printf("_|___           \n");
@@ -248,7 +248,8 @@ int main() {
         printf("   |  I I I I I I  |        \n");
         printf("   \\_             _/       \n");
         printf("     \\_         _/         \n");
-        printf("       \\_______/           \n");
+        printf("       \\_______/           \n\n");
+        printf("Você perdeu! A palavra era %s", palavraSecreta);
     
     }
     

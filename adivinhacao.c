@@ -136,7 +136,7 @@ int main() {
         int maior = chute > numeroSecreto;
 
 
-
+        sleep(1);
         if (acertou) {          
             printf("=========================================\n");
             break;

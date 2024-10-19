@@ -2,7 +2,7 @@
 void abertura();
 void escolhePalavra();
 void desenhaForca();
-void adicionaPalavra();
+void adicionaPalavras();
 void chuta();
 int jaChutou(char letra);
 int ganhou();
