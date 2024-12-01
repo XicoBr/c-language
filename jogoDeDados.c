@@ -16,7 +16,7 @@ Jogador* criarJogador(const char* nome) {
         printf("Erro ao alocar memória!\n");
         exit(1);
     }
-    strcpy(jogador->nome, nome);  // acessa o campo 'nome' apontado pela estrutura 'jogador'
+    strcpy(jogador->nome, nome);  // acessa o campo 'nome' apontado pelo ponteiro 'jogador'
     jogador->vitorias = 0;
     return jogador;
 }

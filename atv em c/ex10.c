@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Escreva um programa em C, com alocação de memória totalmente dinâmica, para armazenar strings em uma matriz. Você deve capturar do teclado o tamanho da maior string a ser armazenada e as dimensões da matriz. Por exemplo, a maior string terá 124 caracteres e a matriz será de 4x5. */
+
+
+
 int main() {
     int linhas, colunas, tamanhoString, i, j;
     char ***matriz; // Ponteiro triplo para armazenar as strings na matriz
