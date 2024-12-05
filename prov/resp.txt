@@ -1,0 +1,70 @@
+Questão 1:
+Letra C
+2,4 E 5.
+
+Questão 2:
+Letra D
+no main ()
+lst é uma variável inteira e no momento da declaração seu valor é
+indeterminado.
+pl carrega o endereço 0xffdd40, que é um endereço para uma área
+de o tipo inteiro.
+NA FUNÇÃO:
+pt_ptl carrega o endereço 0xffdd00, que é um endereço para outro
+ponteiro.
+ptLista carrega o endereço 0x456, que é um endereço para uma área
+do tipo inteiro.
+Lista é uma cópia de lst, pois lst é passado por valor para a funcaoA()
+
+Questão 3:
+*px = 4 *py = 5
+px = <endereço de x> py = <endereço de y>
+&px = <endereço de px> &py = <endereço de py>
+x = 4, y = 27
+
+Questão 4:
+Letra C:
+por referência, por valor, por valor, sendo que todas resultam em
+cópias na funçãoA().
+
+Questão 5:
+Letra C.
+3 e 4 estão certas
+3. A chamada FUNCAO_1(x, y); na linha 26 passa os valores de x (45)
+e y (-10) por valor. Isso significa que cópias desses valores são
+criadas e usadas dentro da função FUNCAO_1.
+4. A LINHA 29 IRÁ MOSTRAR X = 45, Y=-40
+
+Questão 6:
+Letra A
+
+Questão 7:
+considerando que o tipo primitivo double ocupa 8bytes de memoria, o
+ocmando abaixo:
+var_double = (double *) malloc (10 * sizeof(double));
+coloca na variável var_double o endereço do primeiro byte da área de
+80 bytes alocada estaticamente.
+Resposta: Falso
+
+Questão 8:
+Fragmento 1: i = 99, j = 199, *p = 99.
+Fragmento 2: c = 17, a = 5, b = 12.
+Fragmento 3: 21, 8, 8, 21
+
+Questão 9:
+LINHA 1: int *ptINT;
+LINHA 2: ptINT = (int *)malloc(1024 * sizeof(int));
+
+Questão 10:
+Alternativa C
+1,2 e 3
+
+Questão 11:
+Endereço.
+Indica a localização na memoria ram.
+Exemplo questão 4
+
+Questão 12:
+void funcaoA(int *i)
+*i = 0;
+funcaoA(&i);
