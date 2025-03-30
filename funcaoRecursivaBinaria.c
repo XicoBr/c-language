@@ -7,14 +7,14 @@ int bSearch(int array[], int start, int end, int element){
     if (end >= start) {
         // define a posicao do elemento central 
         int mid = start + (end - start) / 2;
-        
+        int verifica = array[mid];
         // imprime a posicao do elemento central(debug apenas)
-        printf("Mid = %d\n", mid);
+        printf("Array[%d] = %d\n", mid, array[mid]);
         
         // se o elemento central for igual ao elemento procurado, retorna a posicao
         if (array[mid] == element) {
-            return mid;
-        
+            return mid;        
+        }
 
         // se o elemento central for menor que o elemento procurado, procura na metade esquerda
             if (array[mid] > element) {
@@ -24,15 +24,15 @@ int bSearch(int array[], int start, int end, int element){
             } else {
                 return bSearch(array, mid + 1, end, element);
             }
-        }
-    return -1;  // retorna caso elemento nao encontrado
+        
     }
+    return -1;  // retorna caso elemento nao encontrado
 }
 
 int main(void) {
     int array[] = {5, 12, 23, 45, 49, 67, 71, 77, 82};
     int n = sizeof(array) / sizeof(array[0]);  // tamanho do array
-    int element = 11;
+    int element = 71;
     int index = bSearch(array, 0, n - 1, element);
 
 
